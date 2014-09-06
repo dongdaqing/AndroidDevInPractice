@@ -1,5 +1,9 @@
 *.class
 
+# project config
+Fragment/DynamicFragment/bin
+Fragment/FragmentDemo/bin
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
