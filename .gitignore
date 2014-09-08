@@ -4,6 +4,9 @@
 Fragment/DynamicFragment/bin
 Fragment/FragmentDemo/bin
 
+ActionBar/ActionBarDemo/bin
+ActionBar/ActionBarTabs/bin
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
