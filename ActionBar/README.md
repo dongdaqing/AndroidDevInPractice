@@ -25,3 +25,7 @@ ActionBar Demo Code Snippets
 ####ActionBarTabs:
 
 1. add tabs
+
+####WeChatStudy:
+
+1. a copy of WeChat UI
