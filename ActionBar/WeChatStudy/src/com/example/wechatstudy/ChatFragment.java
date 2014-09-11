@@ -1,5 +1,7 @@
 package com.example.wechatstudy;
 
-public class ChatFragment {
+import android.app.Fragment;
+
+public class ChatFragment extends Fragment{
 	
 }
