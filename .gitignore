@@ -8,6 +8,8 @@ ActionBar/ActionBarDemo/bin
 ActionBar/ActionBarTabs/bin
 ActionBar/WeChatStudy/bin
 
+TextToSpeech/TextToSpeechDemo/bin
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 

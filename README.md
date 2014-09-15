@@ -10,3 +10,5 @@ Android Development Code Snippets
 1. Fragment
 
 2. ActionBar
+
+3. TextToSpeech
