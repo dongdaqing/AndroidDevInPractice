@@ -12,9 +12,10 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.FrameLayout.LayoutParams;
 
-public class ChatFragment extends Fragment{
+public class ContactsFragment extends Fragment{
 	
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
 		LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
 		FrameLayout fl = new FrameLayout(getActivity());
 		fl.setLayoutParams(params);
@@ -25,11 +26,10 @@ public class ChatFragment extends Fragment{
 		v.setLayoutParams(params);
 		v.setLayoutParams(params);
 		v.setGravity(Gravity.CENTER);
-		v.setText("聊天界面");
+		v.setText("通讯录界面");
 		v.setTextSize((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 12, dm));
 		fl.addView(v);
 		return fl;
-		
 	}
-	
+
 }
