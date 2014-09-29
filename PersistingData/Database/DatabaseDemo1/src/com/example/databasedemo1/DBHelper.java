@@ -1,5 +1,7 @@
 package com.example.databasedemo1;
 
+import java.sql.SQLException;
+
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
@@ -21,8 +23,8 @@ public class DBHelper extends SQLiteOpenHelper{
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		// TODO Auto-generated method stub
 		db.execSQL(DATABASE_CREATE);
+		
 	}
 
 	@Override
