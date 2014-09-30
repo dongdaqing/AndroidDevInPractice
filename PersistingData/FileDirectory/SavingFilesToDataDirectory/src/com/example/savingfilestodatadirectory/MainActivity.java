@@ -1,8 +1,10 @@
 package com.example.savingfilestodatadirectory;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 import android.app.Activity;
@@ -12,6 +14,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
+	static final int READ_BLOCK_SIZE = 100;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,27 @@ public class MainActivity extends Activity {
 			e.printStackTrace();
 		}
 		//read from file
+		try {
+			FileInputStream fIn = openFileInput("textfile.txt");
+			InputStreamReader isr = new InputStreamReader(fIn);
+			char[] inputBuffer = new char[READ_BLOCK_SIZE];
+			String s = "";
+			int charRead;
+			while((charRead = isr.read(inputBuffer))>0){
+				String readString = 
+						String.copyValueOf(inputBuffer, 0, charRead);
+				s += readString;
+				inputBuffer = new char[READ_BLOCK_SIZE];
+			}
+			isr.close();
+			
+			Toast.makeText(getBaseContext(), "File loaded successfully!"+s,
+					Toast.LENGTH_SHORT).show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 	@Override
