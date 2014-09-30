@@ -14,6 +14,7 @@ TextToSpeech/TextToSpeechDemo/bin
 PersistingData/Database/DatabaseDemo1/bin
 PersistingData/FileDirectory/SavingFilesToDataDirectory/bin
 PersistingData/FileDirectory/FileAttachment/bin
+PersistingData/FileDirectory/ExternalStorage/bin
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
